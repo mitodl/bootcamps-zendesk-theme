@@ -17,7 +17,12 @@
     </button>
     <nav class="user-nav" id="user-nav">
       {{link 'community'}}
-      {{link 'new_request' class='submit-a-request'}}
+      <!-- 
+			replaced default link with custom MIT Bootcamps form
+			Peter Pinch 4/9/2019
+			{{link 'new_request' class='submit-a-request'}} 
+			-->
+      <a href="{{page_path 'new_request' ticket_form_id='360000379071'}}">{{t 'submit_a_request'}}</a>
     </nav>
     {{#if signed_in}}
       <div class="user-info dropdown">
