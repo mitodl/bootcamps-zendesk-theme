@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="logo">
+    {{#link 'help_center'}}
+      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+    {{/link}}
+  </div>
+  <div class="nav-wrapper">
+    <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}"></span>
+    <nav class="user-nav" id="user-nav">
+      {{link 'community'}}
+      <!-- 
+			replaced default link with custom MIT Bootcamps form
+			Peter Pinch 4/9/2019
+			{{link 'new_request' class='submit-a-request'}} 
+			-->
+      <a href="{{page_path 'new_request' ticket_form_id='360000379071'}}">{{t 'submit_a_request'}}</a>
+    </nav>
+    {{user_info}}
+  </div>
+</header>
