@@ -1,4 +1,5 @@
-# Bootcamps Zendesk
+# bootcamps-zendesk-theme
+Zendesk theme for Bootcamps
 
 ## Customizations
 
