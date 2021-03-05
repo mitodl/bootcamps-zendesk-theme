@@ -62,5 +62,15 @@
   "post_sharing_description": "Show social media sharing on post",
   "community_topic_group_label": "Community topic elements",
   "follow_topic_label": "Follow",
-  "follow_topic_description": "Users can follow a specific topic"
+  "follow_topic_description": "Users can follow a specific topic",
+  "mit_home_label": "MIT Home",
+  "mit_home_description": "URL for MIT home",
+  "mit_logo_label": "MIT Logo",
+  "mit_logo_description": "Logo image for MIT",
+  "bc_url_label": "Bootcamp URL",
+  "bc_url_description": "URL for Bootcamps",
+  "bc_apply_now_url_label": "Apply Now",
+  "bc_apply_now_url_description": "URL for Apply Now",
+  "bc_how_apply_url_label": "How To Apply",
+  "bc_how_apply_url_description": "URL for How To Apply"
 }

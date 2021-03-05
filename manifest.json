@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#17494D"
+          "value": "rgba(185, 20, 20, 0.87)"
         },
         {
           "identifier": "brand_text_color",
@@ -34,7 +34,7 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#1F73B7"
+          "value": "#AF201C9E"
         },
         {
           "identifier": "visited_link_color",
@@ -382,6 +382,45 @@
           "description": "follow_topic_description",
           "label": "follow_topic_label",
           "value": true
+        }
+      ]
+    },
+    {
+      "label": "header_settings",
+      "variables": [
+        {
+          "identifier": "mit_home",
+          "type": "text",
+          "description": "mit_home_description",
+          "label": "mit_home_label",
+          "value": "https://www.mit.edu/"
+        },
+        {
+          "identifier": "mit_logo",
+          "type": "file",
+          "description": "mit_logo_description",
+          "label": "mit_logo_label"
+        },
+        {
+          "identifier": "bc_url",
+          "type": "text",
+          "description": "bc_url_description",
+          "label": "bc_url_label",
+          "value": "https://bootcamps.mit.edu/"
+        },
+        {
+          "identifier": "bc_apply_now_url",
+          "type": "text",
+          "description": "bc_apply_now_url_description",
+          "label": "bc_apply_now_url_label",
+          "value": "https://bootcamps.mit.edu/applications/"
+        },
+        {
+          "identifier": "bc_how_apply_url",
+          "type": "text",
+          "description": "bc_how_apply_url_description",
+          "label": "bc_how_apply_url_label",
+          "value": "https://bootcamps.mit.edu/apply/"
         }
       ]
     }

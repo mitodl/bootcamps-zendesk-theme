@@ -648,7 +648,7 @@ ul {
   position: relative;
   align-items: center;
   display: flex;
-  height: 71px;
+  height: 52px;
   justify-content: space-between;
 }
 
@@ -659,18 +659,85 @@ ul {
   }
 }
 
+.logo .row {
+  display: inline-block;
+}
+
+.logo .horizontal-margin {
+  margin-right: 10px;
+}
+
+.logo .mit-logo {
+  height: 27px;
+  width: 51px;
+}
+
+.logo .divider-large {
+  display: inline-block;
+  width: 1px;
+  margin: 5px 5px 0 0;
+  background: #000000;
+}
+
+.logo .btn-styled {
+  border-radius: 5px;
+  font-weight: 600;
+  border-width: 2px;
+  border-style: solid;
+  padding: 6px 12px;
+}
+
+.logo .btn-styled.size-1 {
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logo a.btn-styled {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo a.btn-styled:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #a02b2f;
+  border-color: #a02b2f;
+}
+
+.logo .btn-red {
+  color: #ffffff;
+  background-color: #ec654d;
+  border-color: #ec654d;
+}
+
+.logo .btn-red.btn-inverse {
+  color: #ec654d;
+  background-color: #ffffff;
+}
+
+.logo .btn-red.btn-inverse:hover {
+  color: #ffffff;
+  border-color: #ec654d;
+  background-color: #ec654d;
+}
+
 .logo img {
   max-height: 37px;
   vertical-align: middle;
 }
 
+.logo a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .logo span {
   margin: 0 10px;
   color: $brand_color;
-}
-
-.logo a {
-  display: inline-block;
 }
 
 .logo a:hover, .logo a:focus, .logo a:active {
@@ -695,13 +762,20 @@ ul {
   border: solid 1px #ddd;
   right: 0;
   left: 0;
-  top: 71px;
+  top: 52px;
   z-index: 1;
 }
 
 .user-nav[aria-expanded="true"] > a {
   display: block;
   margin: 20px;
+}
+
+.how-to-apply {
+  color: #000000 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
 }
 
 .nav-wrapper a {

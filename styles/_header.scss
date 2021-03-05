@@ -1,5 +1,5 @@
 /***** Header *****/
-$header-height: 71px;
+$header-height: 52px;
 
 .header {
   @include max-width-container;
@@ -10,9 +10,82 @@ $header-height: 71px;
   justify-content: space-between;
 }
 
+.logo {
+  .row {
+    display: inline-block;
+  }
+
+  .horizontal-margin {
+    margin-right: 10px;
+  }
+
+  .mit-logo {
+    height: 27px;
+    width: 51px;
+  }
+
+  .divider-large {
+    display: inline-block;
+    width: 1px;
+    margin: 5px 5px 0 0;
+    background: $default-text-color;
+  }
+
+  .btn-styled {
+    border-radius: 5px;
+    font-weight: 600;
+    border-width: 2px;
+    border-style: solid;
+    padding: 6px 12px;
+
+    &.size-1 {
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  a.btn-styled {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: $carmine;
+      border-color: $carmine;
+    }
+  }
+
+  .btn-red {
+    color: $white;
+    background-color: $button-red;
+    border-color: $button-red;
+
+    &.btn-inverse {
+      color: $button-red;
+      background-color: $white;
+
+      &:hover {
+        color: $white;
+        border-color: $button-red;
+        background-color: $button-red;
+      }
+    }
+  }
+}
+
 .logo img {
   max-height: 37px;
   vertical-align: middle;
+}
+
+.logo a {
+  color: $default-text-color;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .logo span {
@@ -20,9 +93,9 @@ $header-height: 71px;
   color: $brand_color;
 }
 
-.logo a {
-  display: inline-block;
-}
+//.logo a {
+//  display: inline-block;
+//}
 
 .logo a:hover, .logo a:focus, .logo a:active {
   text-decoration: none;
@@ -48,6 +121,12 @@ $header-height: 71px;
       margin: 20px;
     }
   }
+}
+.how-to-apply{
+  color: $default-text-color !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
 }
 
 .nav-wrapper {
