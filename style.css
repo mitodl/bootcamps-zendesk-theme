@@ -193,13 +193,16 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 1024px) {
   body > main {
     min-height: 65vh;
   }
+}
+
+a {
+  font-family: $text_font;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -979,9 +982,8 @@ ul {
 
 /***** Footer *****/
 .footer {
-  border-top: 1px solid #ddd;
-  margin-top: 60px;
-  padding: 30px 0;
+  background: white;
+  overflow: hidden;
 }
 
 .footer a {
@@ -1007,6 +1009,154 @@ ul {
   color: lighten($text_color, 20%);
   display: inline-block;
   font-weight: 300;
+}
+
+.footer .footer-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.footer .footer-top .links-info h2 {
+  font-size: 22px;
+  line-height: 25px;
+  margin: 12px 0 0;
+  font-weight: 700;
+}
+
+.footer .footer-top .links-info a {
+  color: #505050;
+  text-decoration: underline;
+}
+
+.footer .footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: #f0f0f0;
+  /* to carry the background to corners on both left and right sides
+     the big number to make it work on the bigger screens */
+  padding-left: 999px;
+  margin-left: -999px;
+  padding-right: 999px;
+  margin-right: -999px;
+}
+
+.footer .footer-bottom .links {
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.footer .footer-bottom .links li {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.footer .footer-bottom .links li a {
+  color: #696969;
+  font-weight: 400;
+}
+
+.footer .footer-bottom .address-area {
+  margin: 0 auto;
+  max-width: 270px;
+  min-width: 270px;
+}
+
+@media (min-width: 1024px) {
+  .footer .footer-bottom .address-area {
+    margin: 0 0 15px;
+    max-width: 100%;
+  }
+}
+
+.footer .footer-bottom .address-area h3 {
+  color: #505050;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer .footer-bottom address {
+  font-size: 14px;
+  line-height: 20px;
+  color: gray;
+  margin: 0 0 10px;
+  font-family: $heading_font;
+  font-weight: bold;
+}
+
+.footer .social-networks {
+  margin: 0;
+}
+
+.footer .social-networks li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.footer .social-networks li.facebook a:after {
+  background: #42599e;
+}
+
+.footer .social-networks li.linkedin a:after {
+  background: #117eb9;
+}
+
+.footer .social-networks li.twitter a:after {
+  background: #55acee;
+}
+
+.footer .social-networks li.youtube a:after {
+  background: #cd201f;
+}
+
+.footer .social-networks li.instagram a:after {
+  background: radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e42e66 50%, #fa5332 70%, #ffdc80 100%);
+}
+
+.footer .social-networks li.soundcloud a:after {
+  background: #ff5600;
+}
+
+.footer .social-networks li a {
+  color: black;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+
+.footer .social-networks li a:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  content: "";
+  background: black;
+  height: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.footer .social-networks li a:hover {
+  color: #000000;
+}
+
+.footer .social-networks li a:hover:after {
+  height: 100%;
+}
+
+.footer .social-networks li a i {
+  position: relative;
+  z-index: 1;
+}
+
+.powered-by-zendesk {
+  display: none;
 }
 
 /***** Breadcrumbs *****/

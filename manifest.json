@@ -126,7 +126,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "Helvetica, Arial, sans-serif"
         },
         {
           "identifier": "text_font",
@@ -199,7 +199,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "Helvetica, Arial, sans-serif"
         }
       ]
     },
@@ -402,26 +402,75 @@
           "label": "mit_logo_label"
         },
         {
-          "identifier": "bc_url",
+          "identifier": "bc_home",
           "type": "text",
-          "description": "bc_url_description",
-          "label": "bc_url_label",
+          "description": "bc_home_description",
+          "label": "bc_home_label",
           "value": "https://bootcamps.mit.edu/"
         },
         {
-          "identifier": "bc_apply_now_url",
+          "identifier": "bc_apply_now",
           "type": "text",
-          "description": "bc_apply_now_url_description",
-          "label": "bc_apply_now_url_label",
+          "description": "bc_apply_now_description",
+          "label": "bc_apply_now_label",
           "value": "https://bootcamps.mit.edu/applications/"
         },
         {
-          "identifier": "bc_how_apply_url",
+          "identifier": "bc_how_to_apply",
           "type": "text",
-          "description": "bc_how_apply_url_description",
-          "label": "bc_how_apply_url_label",
+          "description": "bc_how_apply_description",
+          "label": "bc_how_apply_label",
           "value": "https://bootcamps.mit.edu/apply/"
         }
+      ]
+    },
+        {
+      "label": "footer_settings",
+      "variables": [
+        {
+          "identifier": "bc_about_us",
+          "type": "text",
+          "description": "bc_about_us_description",
+          "label": "bc_about_us_label",
+          "value": "https://bootcamps.mit.edu/about-us/"
+        },
+        {
+          "identifier": "bc_programs",
+          "type": "text",
+          "description": "bc_programs_description",
+          "label": "bc_programs_label",
+          "value": "https://bootcamps.mit.edu/"
+        },
+        {
+          "identifier": "bc_tos",
+          "type": "text",
+          "description": "bc_tos_description",
+          "label": "bc_tos_label",
+          "value": "https://bootcamps.mit.edu/terms-of-service/"
+        },
+        {
+          "identifier": "bc_privacy_policy",
+          "type": "text",
+          "description": "bc_privacy_policy_description",
+          "label": "bc_privacy_policy_label",
+          "value": "https://bootcamps.mit.edu/privacy-policy/"
+        },
+        {
+          "identifier": "mit_open_learning",
+          "type": "text",
+          "description": "mit_open_learning_description",
+          "label": "mit_open_learning_lebel",
+          "value": "https://openlearning.mit.edu/"
+        },
+                {
+          "identifier": "mit_accessibility",
+          "type": "text",
+          "description": "mit_accessibility_description",
+          "label": "mit_accessibility_label",
+          "value": "https://accessibility.mit.edu"
+        }
+
+
       ]
     }
   ]

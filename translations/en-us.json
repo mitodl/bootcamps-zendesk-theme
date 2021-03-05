@@ -67,10 +67,16 @@
   "mit_home_description": "URL for MIT home",
   "mit_logo_label": "MIT Logo",
   "mit_logo_description": "Logo image for MIT",
-  "bc_url_label": "Bootcamp URL",
-  "bc_url_description": "URL for Bootcamps",
-  "bc_apply_now_url_label": "Apply Now",
-  "bc_apply_now_url_description": "URL for Apply Now",
-  "bc_how_apply_url_label": "How To Apply",
-  "bc_how_apply_url_description": "URL for How To Apply"
+  "bc_home_label": "Bootcamp URL",
+  "bc_home_description": "URL for Bootcamps",
+  "bc_apply_now_label": "Apply Now",
+  "bc_apply_now_description": "URL for Apply Now",
+  "bc_how_apply_label": "How To Apply",
+  "bc_how_apply_description": "URL for How To Apply",
+  "bc_programs_label": "Bootcamp Programs",
+  "bc_programs_description": "URL for Bootcamp programs",
+  "bc_tos_label": "Bootcamp Terms of Service",
+  "bc_tos_description": "URL for Bootcamp Terms of service",
+  "bc_privacy_policy_label": "Bootcamp Privacy Policy",
+  "bc_privacy_policy_description": "URL for privacy policy"
 }
