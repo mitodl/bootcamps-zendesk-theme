@@ -462,13 +462,28 @@
           "label": "mit_open_learning_lebel",
           "value": "https://openlearning.mit.edu/"
         },
-                {
+        {
           "identifier": "mit_accessibility",
           "type": "text",
           "description": "mit_accessibility_description",
           "label": "mit_accessibility_label",
           "value": "https://accessibility.mit.edu"
+        },
+        {
+          "identifier": "hubspot_portal_id",
+          "type": "text",
+          "description": "mit_hb_portal_id_description",
+          "label": "mit_hb_portal_id_label",
+          "value": "test_portal_id"
+        },
+        {
+          "identifier": "hubspot_footer_form_guid",
+          "type": "text",
+          "description": "mit_hb_footer_form_id_description",
+          "label": "mit_hb_footer_form_id_label",
+          "value": "test_form_id"
         }
+
 
 
       ]
