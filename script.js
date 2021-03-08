@@ -403,5 +403,4 @@ document.addEventListener('DOMContentLoaded', function() {
   if (location.pathname.indexOf("/requests/new") > -1) {
     document.getElementById("contact-us-element").style.display = "none";
   }
-
 });
