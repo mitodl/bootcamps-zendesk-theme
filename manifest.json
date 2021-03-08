@@ -386,7 +386,7 @@
       ]
     },
     {
-      "label": "header_settings",
+      "label": "bc_header_settings",
       "variables": [
         {
           "identifier": "mit_home",
@@ -425,7 +425,7 @@
       ]
     },
         {
-      "label": "footer_settings",
+      "label": "bc_footer_settings",
       "variables": [
         {
           "identifier": "bc_about_us",
