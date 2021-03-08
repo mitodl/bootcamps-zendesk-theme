@@ -10,14 +10,21 @@
 
   .col-sm-8 {
     padding: 0 15px;
-    width: 66.6%;
+    width: 100%;
     float: left;
+    @include tablet {
+      width: 66.6%;
+    }
   }
 
   .col-sm-4 {
     padding: 0 15px;
-    width: 33.33%;
+    width: 100%;
     float: left;
+
+    @include tablet {
+      width: 33.33%;
+    }
   }
 
   .col-6{
@@ -27,15 +34,23 @@
   }
 
   .col-md-8 {
+    width: 100%;
     padding: 0 15px;
-    width: 66.6%;
     float: left;
+
+    @include desktop {
+      width: 66.6%;
+    }
   }
 
   .col-md-4 {
     padding: 0 15px;
-    width: 33.33%;
+    width: 100%;
     float: left;
+
+    @include desktop {
+      width: 33.33%;
+    }
   }
 
   a { color: $secondary-text-color; }
@@ -44,6 +59,11 @@
     @include max-width-container;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+
+    .container {
+      width: 100%;
+    }
   }
 
   &-language-selector button {
@@ -58,18 +78,20 @@
   position: relative;
 
   .links-info {
-    //@include media-breakpoint-down(sm) {
-    //  margin-bottom: 20px;
-    //}
+    margin-bottom: 20px;
+
+    @include tablet{
+      margin-bottom: 0;
+    }
 
     h2 {
       font-size: 22px;
       line-height: 25px;
-      margin: 12px 0 0;
+      margin: 0;
       font-weight: 700;
-      //@include media-breakpoint-down(sm) {
-      //  margin: 0;
-      //}
+      @include tablet{
+        margin: 12px 0 0;
+      }
     }
 
     a {
@@ -152,7 +174,7 @@
 }
 
 .footer-bottom {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background: $white-smoke-dark;
   /* to carry the background to corners on both left and right sides
@@ -162,9 +184,9 @@
   padding-right: 999px;
   margin-right: -999px;
 
-  //@include media-breakpoint-down(sm) {
-  //  padding-top: 20px;
-  //}
+  @include tablet {
+    padding-top: 40px;
+  }
 
   .links {
     margin: 0;
@@ -183,24 +205,20 @@
   }
 
   .address-area {
-    margin: 0 auto;
-    max-width: 270px;
-    min-width: 270px;
+    margin: 0 0 15px;
+    max-width: 100%;
 
-    @include desktop {
-      margin: 0 0 15px;
-      max-width: 100%;
+
+    @include tablet {
+      max-width: 270px;
+      margin: 0 auto;
     }
-
-    //@include media-breakpoint-down(sm) {
-    //  margin: 0 0 15px;
-    //  max-width: 100%;
-    //}
 
     h3 {
       color: $matterhorn;
       font-weight: 600;
       font-size: 20px;
+      margin-bottom: 8px;
     }
   }
 

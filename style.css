@@ -678,8 +678,9 @@ ul {
 .logo .divider-large {
   display: inline-block;
   width: 1px;
-  margin: 5px 5px 0 0;
+  margin: 0px 5px 0 5px;
   background: #000000;
+  height: 26px;
 }
 
 .logo .btn-styled {
@@ -993,14 +994,26 @@ ul {
 
 .footer .col-sm-8 {
   padding: 0 15px;
-  width: 66.6%;
+  width: 100%;
   float: left;
+}
+
+@media (min-width: 768px) {
+  .footer .col-sm-8 {
+    width: 66.6%;
+  }
 }
 
 .footer .col-sm-4 {
   padding: 0 15px;
-  width: 33.33%;
+  width: 100%;
   float: left;
+}
+
+@media (min-width: 768px) {
+  .footer .col-sm-4 {
+    width: 33.33%;
+  }
 }
 
 .footer .col-6 {
@@ -1010,15 +1023,27 @@ ul {
 }
 
 .footer .col-md-8 {
+  width: 100%;
   padding: 0 15px;
-  width: 66.6%;
   float: left;
+}
+
+@media (min-width: 1024px) {
+  .footer .col-md-8 {
+    width: 66.6%;
+  }
 }
 
 .footer .col-md-4 {
   padding: 0 15px;
-  width: 33.33%;
+  width: 100%;
   float: left;
+}
+
+@media (min-width: 1024px) {
+  .footer .col-md-4 {
+    width: 33.33%;
+  }
 }
 
 .footer a {
@@ -1031,6 +1056,7 @@ ul {
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 @media (min-width: 1160px) {
@@ -1038,6 +1064,10 @@ ul {
     padding: 0;
     width: 90%;
   }
+}
+
+.footer-inner .container {
+  width: 100%;
 }
 
 .footer-language-selector button {
@@ -1052,11 +1082,27 @@ ul {
   position: relative;
 }
 
+.footer .footer-top .links-info {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-top .links-info {
+    margin-bottom: 0;
+  }
+}
+
 .footer .footer-top .links-info h2 {
   font-size: 22px;
   line-height: 25px;
-  margin: 12px 0 0;
+  margin: 0;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-top .links-info h2 {
+    margin: 12px 0 0;
+  }
 }
 
 .footer .footer-top .links-info a {
@@ -1132,7 +1178,7 @@ ul {
 }
 
 .footer .footer-bottom {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background: #f0f0f0;
   /* to carry the background to corners on both left and right sides
@@ -1141,6 +1187,12 @@ ul {
   margin-left: -999px;
   padding-right: 999px;
   margin-right: -999px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-bottom {
+    padding-top: 40px;
+  }
 }
 
 .footer .footer-bottom .links {
@@ -1160,15 +1212,14 @@ ul {
 }
 
 .footer .footer-bottom .address-area {
-  margin: 0 auto;
-  max-width: 270px;
-  min-width: 270px;
+  margin: 0 0 15px;
+  max-width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .footer .footer-bottom .address-area {
-    margin: 0 0 15px;
-    max-width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
   }
 }
 
@@ -1176,6 +1227,7 @@ ul {
   color: #505050;
   font-weight: 600;
   font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .footer .footer-bottom address {

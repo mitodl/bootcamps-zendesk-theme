@@ -34,7 +34,7 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#AF201C9E"
+          "value": "rgba(175, 32, 28, 0.64)"
         },
         {
           "identifier": "visited_link_color",
@@ -459,7 +459,7 @@
           "identifier": "mit_open_learning",
           "type": "text",
           "description": "mit_open_learning_description",
-          "label": "mit_open_learning_lebel",
+          "label": "mit_open_learning_label",
           "value": "https://openlearning.mit.edu/"
         },
         {
@@ -474,18 +474,15 @@
           "type": "text",
           "description": "mit_hb_portal_id_description",
           "label": "mit_hb_portal_id_label",
-          "value": "test_portal_id"
+          "value": ""
         },
         {
           "identifier": "hubspot_footer_form_guid",
           "type": "text",
           "description": "mit_hb_footer_form_id_description",
           "label": "mit_hb_footer_form_id_label",
-          "value": "test_form_id"
+          "value": ""
         }
-
-
-
       ]
     }
   ]

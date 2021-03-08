@@ -27,8 +27,9 @@ $header-height: 52px;
   .divider-large {
     display: inline-block;
     width: 1px;
-    margin: 5px 5px 0 0;
+    margin: 0px 5px 0 5px;
     background: $default-text-color;
+    height: 26px;
   }
 
   .btn-styled {

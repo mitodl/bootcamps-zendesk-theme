@@ -20,8 +20,8 @@
         <script>
           if (typeof hbspt !== 'undefined') {
               hbspt.forms.create({
-                portalId: ""{{ settings.hubspot_portal_id }},
-                formId: {{ settings.hubspot_footer_form_guid }},
+                portalId: '{{ settings.hubspot_portal_id }}',
+                formId: '{{ settings.hubspot_footer_form_guid }}',
                 target: '#hs_footer_form'
               });
           }
