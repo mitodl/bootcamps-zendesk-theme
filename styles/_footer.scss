@@ -117,6 +117,10 @@
           border: 1px solid gray;
           padding: 5px 10px;
           width: 100%;
+          border-radius: 5px;
+          line-height: 24px;
+          font-weight: 400;
+          font-size: 16px;
         }
       }
 
@@ -129,7 +133,7 @@
 
       .hs-button {
         color: white;
-        background: url("{{ asset 'arrow-circle-right.svg' }}") no-repeat;
+        background: url("../assets/arrow-circle-right.svg") no-repeat;
         background-size: 18px 18px;
         border: none;
         padding: 0;
@@ -139,6 +143,7 @@
         cursor: pointer;
         text-indent: -9999px;
         overflow: hidden;
+        min-width: 18px;
       }
 
       .hs_error_rollup {
