@@ -160,7 +160,7 @@ $header-height: 52px;
     }
 
     &.sign-in {
-      display: inline-block;
+      display: none;
     }
   }
 
@@ -236,4 +236,8 @@ $header-height: 52px;
       right: auto;
     }
   }
+}
+
+a.submit-a-request{
+  display: none;
 }

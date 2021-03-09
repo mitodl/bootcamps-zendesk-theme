@@ -810,7 +810,7 @@ ul {
 }
 
 .nav-wrapper a.sign-in {
-  display: inline-block;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -894,6 +894,10 @@ ul {
 [dir="rtl"] .skip-navigation:focus, [dir="rtl"] .skip-navigation:active {
   left: initial;
   right: auto;
+}
+
+a.submit-a-request {
+  display: none;
 }
 
 /***** User info in header *****/
