@@ -1,8 +1,8 @@
 {
-  "name": "Peter's Copenhagen",
+  "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "1.5.0",
-  "api_version": 1,
+  "version": "2.8.0",
+  "api_version": 2,
   "default_locale": "en-us",
   "settings": [
     {
@@ -27,7 +27,7 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "#333333"
+          "value": "#2F3941"
         },
         {
           "identifier": "link_color",
@@ -35,6 +35,13 @@
           "description": "link_color_description",
           "label": "link_color_label",
           "value": "rgba(175, 32, 28, 0.64)"
+        },
+        {
+          "identifier": "visited_link_color",
+          "type": "color",
+          "description": "visited_link_color_description",
+          "label": "visited_link_color_label",
+          "value": "#4B61C3"
         },
         {
           "identifier": "background_color",
@@ -53,7 +60,6 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
           "options": [
             {
               "label": "System",
@@ -119,14 +125,14 @@
               "label": "Trebuchet MS",
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
-          ]
+          ],
+          "value": "Helvetica, Arial, sans-serif"
         },
         {
           "identifier": "text_font",
           "type": "list",
           "description": "text_font_description",
           "label": "text_font_label",
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
           "options": [
             {
               "label": "System",
@@ -192,7 +198,8 @@
               "label": "Trebuchet MS",
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
-          ]
+          ],
+          "value": "Helvetica, Arial, sans-serif"
         }
       ]
     },
@@ -204,6 +211,13 @@
           "type": "file",
           "description": "logo_description",
           "label": "logo_label"
+        },
+        {
+          "identifier": "show_brand_name",
+          "type": "checkbox",
+          "description": "show_brand_name_description",
+          "label": "show_brand_name_label",
+          "value": false
         },
         {
           "identifier": "favicon",
@@ -258,7 +272,7 @@
           "type": "checkbox",
           "description": "scoped_community_search_description",
           "label": "scoped_community_search_label",
-          "value": false
+          "value": true
         }
       ]
     },
@@ -270,7 +284,7 @@
           "type": "checkbox",
           "description": "recent_activity_description",
           "label": "recent_activity_label",
-          "value": false
+          "value": true
         }
       ]
     },
@@ -289,21 +303,21 @@
           "type": "checkbox",
           "description": "article_author_description",
           "label": "article_author_label",
-          "value": false
+          "value": true
         },
         {
           "identifier": "show_article_comments",
           "type": "checkbox",
           "description": "article_comments_description",
           "label": "article_comments_label",
-          "value": false
+          "value": true
         },
         {
           "identifier": "show_follow_article",
           "type": "checkbox",
           "description": "follow_article_description",
           "label": "follow_article_label",
-          "value": false
+          "value": true
         },
         {
           "identifier": "show_recently_viewed_articles",
@@ -324,7 +338,7 @@
           "type": "checkbox",
           "description": "article_sharing_description",
           "label": "article_sharing_label",
-          "value": false
+          "value": true
         }
       ]
     },
@@ -336,7 +350,7 @@
           "type": "checkbox",
           "description": "follow_section_description",
           "label": "follow_section_label",
-          "value": false
+          "value": true
         }
       ]
     },
@@ -348,14 +362,14 @@
           "type": "checkbox",
           "description": "follow_post_description",
           "label": "follow_post_label",
-          "value": false
+          "value": true
         },
         {
           "identifier": "show_post_sharing",
           "type": "checkbox",
           "description": "post_sharing_description",
           "label": "post_sharing_label",
-          "value": false
+          "value": true
         }
       ]
     },
@@ -367,7 +381,107 @@
           "type": "checkbox",
           "description": "follow_topic_description",
           "label": "follow_topic_label",
-          "value": false
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "bc_header_settings",
+      "variables": [
+        {
+          "identifier": "mit_home",
+          "type": "text",
+          "description": "mit_home_description",
+          "label": "mit_home_label",
+          "value": "https://www.mit.edu/"
+        },
+        {
+          "identifier": "mit_logo",
+          "type": "file",
+          "description": "mit_logo_description",
+          "label": "mit_logo_label"
+        },
+        {
+          "identifier": "bc_home",
+          "type": "text",
+          "description": "bc_home_description",
+          "label": "bc_home_label",
+          "value": "https://bootcamps.mit.edu/"
+        },
+        {
+          "identifier": "bc_apply_now",
+          "type": "text",
+          "description": "bc_apply_now_description",
+          "label": "bc_apply_now_label",
+          "value": "https://bootcamps.mit.edu/applications/"
+        },
+        {
+          "identifier": "bc_how_to_apply",
+          "type": "text",
+          "description": "bc_how_apply_description",
+          "label": "bc_how_apply_label",
+          "value": "https://bootcamps.mit.edu/apply/"
+        }
+      ]
+    },
+        {
+      "label": "bc_footer_settings",
+      "variables": [
+        {
+          "identifier": "bc_about_us",
+          "type": "text",
+          "description": "bc_about_us_description",
+          "label": "bc_about_us_label",
+          "value": "https://bootcamps.mit.edu/about-us/"
+        },
+        {
+          "identifier": "bc_programs",
+          "type": "text",
+          "description": "bc_programs_description",
+          "label": "bc_programs_label",
+          "value": "https://bootcamps.mit.edu/"
+        },
+        {
+          "identifier": "bc_tos",
+          "type": "text",
+          "description": "bc_tos_description",
+          "label": "bc_tos_label",
+          "value": "https://bootcamps.mit.edu/terms-of-service/"
+        },
+        {
+          "identifier": "bc_privacy_policy",
+          "type": "text",
+          "description": "bc_privacy_policy_description",
+          "label": "bc_privacy_policy_label",
+          "value": "https://bootcamps.mit.edu/privacy-policy/"
+        },
+        {
+          "identifier": "mit_open_learning",
+          "type": "text",
+          "description": "mit_open_learning_description",
+          "label": "mit_open_learning_label",
+          "value": "https://openlearning.mit.edu/"
+        },
+        {
+          "identifier": "mit_accessibility",
+          "type": "text",
+          "description": "mit_accessibility_description",
+          "label": "mit_accessibility_label",
+          "value": "https://accessibility.mit.edu"
+        },
+        {
+          "identifier": "hubspot_portal_id",
+          "type": "text",
+          "description": "mit_hb_portal_id_description",
+          "label": "mit_hb_portal_id_label",
+          "value": ""
+        },
+        {
+          "identifier": "hubspot_footer_form_guid",
+          "type": "text",
+          "description": "mit_hb_footer_form_id_description",
+          "label": "mit_hb_footer_form_id_label",
+          "value": ""
         }
       ]
     }
