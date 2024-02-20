@@ -389,17 +389,10 @@
       "label": "bc_header_settings",
       "variables": [
         {
-          "identifier": "mit_home",
-          "type": "text",
-          "description": "mit_home_description",
-          "label": "mit_home_label",
-          "value": "https://www.mit.edu/"
-        },
-        {
-          "identifier": "mit_logo",
+          "identifier": "mit_ol_logo",
           "type": "file",
-          "description": "mit_logo_description",
-          "label": "mit_logo_label"
+          "description": "mit_ol_logo_description",
+          "label": "mit_ol_logo_label"
         },
         {
           "identifier": "bc_home",
