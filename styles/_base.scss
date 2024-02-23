@@ -10,13 +10,17 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-base;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  //-webkit-font-smoothing: antialiased;
 
   > main {
     @include desktop {
       min-height: 65vh;
     }
   }
+}
+
+a {
+  font-family: $text_font;
 }
 
 h1, h2, h3, h4, h5, h6 {

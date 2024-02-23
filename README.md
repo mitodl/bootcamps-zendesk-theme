@@ -1,22 +1,47 @@
-# Copenhagen Theme by Zendesk
+# Bootcamps Zendesk
+
+## Customizations
+
+We are primarily leveraging the Copenhagen Zendesk theme (see below), with some customizations.
+
+### To update
+- Go to: https://mitbootcamps.zendesk.com/theming/workbench
+- Click on `Add theme`
+- Select `Add from Github`
+- Use this repo: `https://github.com/mitodl/bootcamps-zendesk-theme`
+- Name the newly-created theme
+- Click `Customize` on the theme
+   - Under `Article Page Settings`
+      - Uncheck `Author`
+      - Uncheck `Comments`
+      - Uncheck `Follow`
+       - Uncheck `Social Sharing`
+   - Under `Home Page Elements`
+      - Uncheck `Recent Activity`
+- When ready, choose `Set as live theme` in the menu for the new theme
+
+Note that we have customized the footer of the theme to match the footer on the Boootcamps site.
+
+
+## Copenhagen Theme by Zendesk
 
 The Copenhagen theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
 Learn more about customizing Zendesk Guide [here](https://support.zendesk.com/hc/en-us/sections/206670747).
 
 The Copenhagen theme for Help Center consists of a [set of templates](#templates), [styles](#styles), a Javascript file used mainly for interactions and an [assets folder](#assets).
 
-## How to use
+### How to use
 This is the latest version of the Copenhagen theme available for Guide. It is possible to use this repository as a starting point to build your own custom theme. You can fork this repository as you see fit.
 You can use your favorite IDE to develop themes and preview your changes locally in a web browser using the Zendesk Apps Tools (ZAT). For details, see [Previewing theme changes locally](https://support.zendesk.com/hc/en-us/articles/115014810447).
 
-## Customizing your theme
+### Customizing your theme
 Once you have forked this repository you can feel free to edit templates, CSS in `style.css` (if you would like to use SASS go to the [Using SASS section](#using-sass)), javascript and manage assets.
 
-### Manifest file
+#### Manifest file
 The manifest allows you to define a group of settings for your theme that can then be changed via the UI in Theming Center.
 You can read more about the manifest file [here](https://support.zendesk.com/hc/en-us/articles/115012547687).
 
-### Settings folder
+#### Settings folder
 If you have a variable of type file, you need to provide a default file for that variable in the `/settings` folder. This file will be used on the settings panel by default and users can upload a different file if they like.
 Ex.
 If you would like to have a variable for the background image of a section, the variable in your manifest file would look something like this:
@@ -39,18 +64,18 @@ If you would like to have a variable for the background image of a section, the 
 
 And this would look for a file inside the settings folder named: `background_image`
 
-### Adding assets
+#### Adding assets
 You can add assets to the asset folder and use them in your CSS, Javascript and templates.
 You can read more about assets [here](https://support.zendesk.com/hc/en-us/articles/115012399428)
 
-## Publishing your theme
+### Publishing your theme
 After you have customized your theme you can download the repository as a `zip` file and import it into Theming Center.
 
 You can follow the documentation for importing [here](https://support.zendesk.com/hc/en-us/articles/115012794168).
 
-You can also import directly from GitHub - learn more [here](https://support.zendesk.com/hc/en-us/community/posts/360004400007).
+You can also import directly from GitHub - learn more [here](https://support.zendesk.com/hc/en-us/articles/4408832476698).
 
-## Templates
+### Templates
 The theme includes all the templates that are used for a Help Center that has *all* the features available.
 List of templates in the theme:
 * Article page
@@ -81,20 +106,20 @@ You can add up to 10 optional templates for:
 You do this by creating files under the folders `templates/article_pages`, `templates/category_pages` or `templates/section_pages`.
 Learn more [here](https://support.zendesk.com/hc/en-us/articles/360001948367).
 
-## Styles
+### Styles
 The styles that Theming Center needs to use in the theme are in the `style.css` file in the root folder.
 
-The styles for the theme are split using Sass partials, all the partials are under [styles/](/blob/master/styles/), they are all included in the "main" file [index.scss](/blob/master/styles/index.scss) and then compiled to CSS.
+The styles for the theme are split using Sass partials, all the partials are under [styles/](/styles/), they are all included in the "main" file [index.scss](/styles/index.scss) and then compiled to CSS.
 If you wish to use SASS you can go to the [using SASS section](#using-sass)
 
-## Assets
+### Assets
 The Copenhagen theme doesn't have any assets, but you can add assets to your theme by placing them in the `assets` folder.
 
-# Using SASS
+## Using SASS
 In order to use SASS for development, you just need to compile it into the CSS that Zendesk Guide understands.
 Note: Zendesk App Tools [theme preview](#publishing-your-theme) currently does not support live SASS compilation.
 
-## Requirements
+### Requirements
 
 - Install Ruby, we use `sassc` gem to compile our `.scss` files. You can see how to install Ruby [here](https://www.ruby-lang.org/en/documentation/installation/).
 - Install `sassc` gem. You can run:
@@ -108,69 +133,27 @@ Now you can compile your SASS files running:
 ```
 Which will take all the `scss` files inside the `styles/` folder and create the `style.css` file that is consumable by Zendesk Guide.
 
-# Contributing
-Pull requests are welcome on GitHub at https://github.com/zendesk/copenhagen_theme. Please mention @zendesk/vikings when creating a pull request.
+# Quick Setup Recall (Running and testing theme locally)
 
-We use [conventional commits](https://conventionalcommits.org/) to improve readability of the project history and to automate the release process. The commit message should therefore respect the following format:
+NOTE: This guide is to quickly setup and run the theme locally. To know more about how to customize the theme, See all the details above.
 
+1. Create a trial account on https://www.zendesk.com/. This will let you create a subdomain Zendesk account that you can manage.
+2. Make sure to opt-in for Guide integration once your trial account setup is done.
+3. Create API keys for running the server locally and previewing them on your subdomain. `<YOUR_ZENDESK_DOMAIN>/admin/apps-integrations/apis/zendesk-api/settings`.
+4. Enable Help Center for your account through `<YOUR_ZENDESK_DOMAIN>/hc/admin/general_settings`
+5. Install [ZAT](https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-zat/)
+6. Run `npm i` to install all the node packages
+7. Install `sassc` as mentioned in [Requirements sections](#requirements)
+8. Create a `.zat` file in your main directory. You can use `zat new` or create one manually. This file content would look like:
 ```
-<type>[optional scope]: <description>
-
-[optional body]
-
-[optional footer(s)]
-
+{
+  "subdomain": "<YOUR_SUB_DOMAIN>",
+  "username": "<USERNAME>/token",
+  "password": "<TOKEN_GENERATED_IN_STEP_3>",
+  "zat_latest": "3.9.2",
+  "zat_update_check": "2024-02-07"
+}
 ```
-
-- type: describes the category of the change. See [supported types](#commit-types).
-- scope: (optional) describes what is affected by the change
-- subject: a small description of the change
-- body: (optional) additional contextual information about the change
-- footer: (optional) adds external links, issue references and other meta-information
-
-i.e.: 
-
-```
-chore: automate release
-fix(styles): fix button padding
-feat(script): add auto focus to fields with errors
-```
-
-We use [`husky`](https://github.com/typicode/husky) and [`commitlint`](https://github.com/conventional-changelog/commitlint) to validate messages when commiting.
-
-We use [Github actions](https://github.com/features/actions) together with [`semantic-release`](https://github.com/semantic-release/semantic-release) to release a new version of the theme once a PR gets merged. On each merge, `semantic-release` analyses the commit messages and infers a semantic version bump. It then creates a git tag, updates the manifest version and generates the corresponding [changelog](CHANGELOG.md).
-
-## Commit types
-
-The list bellow describes the supported commit types and their effect in the release and changelog.
-
-| Type     | Description                                                                                            | Release | Changelog                |
-|----------|--------------------------------------------------------------------------------------------------------|---------|--------------------------|
-| build    | Changes that affect the build system or external dependencies                                          | -       | -                        |
-| chore    | Other changes that don't modify the source code                                                        | -       | -                        |
-| ci       | Changes to our CI configuration files and scripts                                                      | -       | -                        |
-| docs     | Documentation only changes                                                                             | -       | -                        |
-| feat     | A new feature                                                                                          | minor   | Features                 |
-| fix      | A bug fix                                                                                              | patch   | Bug Fixes                |
-| perf     | A code change that improves performance                                                                | patch   | Performance Improvements |
-| refactor | A code change that neither fixes a bug nor adds a feature                                              | -       | -                        |
-| revert   | Reverts a previous commit                                                                              | patch   | Reverts                  |
-| style    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) | -       | -                        |
-| test     | Adding missing tests or correcting existing tests                                                      | -       | -                        |
-
-## Breaking changes
-
-Commits that add a breaking change should include `BREAKING CHANGE` in the body or footer of the commit message.
-
-i.e.:
-
-```
-feat: update theme to use theming api v2
-
-BREAKING CHANGE: theme is now relying on functionality that is exclusive to the theming api v2
-```
-
-This will then generate a major release and add a `BREAKING CHANGES` section in the [changelog](CHANGELOG.md).
-
-# Bug reports
-Bug reports must be submitted through Zendesk's standard support channels: https://www.zendesk.com/contact/
+9. Compile the assets `./bin/compile.rb`
+10. Run the preview `zat theme preview`
+11. (Optional) to build a zip of local theme and upload on your trial instance run `zip -vr <ZIP_FILE_NAME>.zip <YOUR_THEME_DIRECTORY> -x "*/node_modules/*"` and then upload the generated zip file on `<YOUR_ZENDESK_DOMAIN>/theming/workbench`
