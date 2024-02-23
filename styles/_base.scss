@@ -9,7 +9,7 @@ body {
   font-family: $text_font;
   font-size: $font-size-base;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  //-webkit-font-smoothing: antialiased;
 
   > main {
     @include desktop {
@@ -18,6 +18,11 @@ body {
   }
 }
 
+a {
+  font-family: $text_font;
+}
+
+h1, h2, h3, h4, h5, h6 {
 h1,
 h2,
 h3,

@@ -2,19 +2,18 @@
 
 <header class="header">
   <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-      {{#if settings.show_brand_name}}
-        <span aria-hidden="true">{{help_center.name}}</span>
-      {{/if}}
-    {{/link}}
+    <div class="row">
+      <a href="{{settings.bc_home}}">
+        <img class="mit-bootcamps-logo" src="{{settings.logo}}" alt="MIT Bootcamps Logo" />
+      </a>
+      <a class="btn-styled btn-red size-1 horizontal-margin" href="{{settings.bc_apply_now}}">Apply Now</a>
+    </div>
   </div>
 
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
       <ul class="user-nav-list">
-        <li>{{link 'community'}}</li>
-        <li>{{link 'new_request' class='submit-a-request'}}</li>
+        <a class="how-to-apply horizontal-margin" href="{{settings.bc_how_to_apply}}">How to Apply</a>
         {{#unless signed_in}}
           <li>
             {{#link "sign_in" class="sign-in"}}
