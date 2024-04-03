@@ -141,10 +141,10 @@ NOTE: This guide is to quickly setup and run the theme locally. To know more abo
 2. Make sure to opt-in for Guide integration once your trial account setup is done.
 3. Create API keys for running the server locally and previewing them on your subdomain. `<YOUR_ZENDESK_DOMAIN>/admin/apps-integrations/apis/zendesk-api/settings`.
 4. Enable Help Center for your account through `<YOUR_ZENDESK_DOMAIN>/hc/admin/general_settings`
-5. Install [ZAT](https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-zat/)
+5. Install [ZAT](https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-zat/) and [ZAT CLI](https://support.zendesk.com/hc/en-us/articles/4408822095642-Previewing-theme-changes-locally)
 6. Run `npm i` to install all the node packages
 7. Install `sassc` as mentioned in [Requirements sections](#requirements)
-8. Create a `.zat` file in your main directory. You can use `zat new` or create one manually. This file content would look like:
+8. Create a `.zat` file in your main directory. You can read more about this in [Configuration section](https://developer.zendesk.com/documentation/apps/zendesk-app-tools-zat/installing-and-using-zat/#configuring-updates). This file content would look like:
 ```
 {
   "subdomain": "<YOUR_SUB_DOMAIN>",
