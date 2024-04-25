@@ -203,7 +203,6 @@ a {
   font-family: $text_font;
 }
 
-h1, h2, h3, h4, h5, h6 {
 h1,
 h2,
 h3,
@@ -646,13 +645,11 @@ ul {
 .logo .row {
   display: inline-block;
 }
-
 .logo .mit-bootcamps-logo {
   height: 29px;
   width: 173px;
   margin-right: 10px;
 }
-
 .logo .btn-styled {
   border-radius: 5px;
   font-weight: 600;
@@ -660,37 +657,31 @@ ul {
   border-style: solid;
   padding: 6px 12px;
 }
-
 .logo .btn-styled.size-1 {
   padding: 2px 6px;
   font-size: 14px;
   font-weight: 500;
 }
-
 .logo a.btn-styled {
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
 }
-
 .logo a.btn-styled:hover {
   color: #ffffff;
   text-decoration: none;
   background-color: #a02b2f;
   border-color: #a02b2f;
 }
-
 .logo .btn-red {
   color: #ffffff;
   background-color: #ec654d;
   border-color: #ec654d;
 }
-
 .logo .btn-red.btn-inverse {
   color: #ec654d;
   background-color: #ffffff;
 }
-
 .logo .btn-red.btn-inverse:hover {
   color: #ffffff;
   border-color: #ec654d;
@@ -804,10 +795,6 @@ ul {
   text-decoration: underline;
 }
 
-.nav-wrapper-desktop a.sign-in {
-  display: none;
-}
-
 @media (min-width: 1024px) {
   .nav-wrapper-mobile {
     display: none;
@@ -838,7 +825,7 @@ ul {
   border-bottom: solid 1px #ddd;
   right: 0;
   left: 0;
-  top: 71px;
+  top: 52px;
   z-index: 2;
 }
 .nav-wrapper-mobile .menu-list-mobile[aria-expanded=false] {
@@ -944,6 +931,7 @@ ul {
 a.submit-a-request {
   display: none;
 }
+
 /***** User info in header *****/
 .user-info {
   display: inline-block;
@@ -1026,60 +1014,50 @@ a.submit-a-request {
   background: white;
   overflow: hidden;
 }
-
 .footer .row {
   overflow: hidden;
   margin: 0 -15px;
 }
-
 .footer .col-sm-8 {
   padding: 0 15px;
   width: 100%;
   float: left;
 }
-
 @media (min-width: 768px) {
   .footer .col-sm-8 {
     width: 66.6%;
   }
 }
-
 .footer .col-sm-4 {
   padding: 0 15px;
   width: 100%;
   float: left;
 }
-
 @media (min-width: 768px) {
   .footer .col-sm-4 {
     width: 33.33%;
   }
 }
-
 .footer .col-6 {
   padding: 0 15px;
   width: 50%;
   float: left;
 }
-
 .footer .col-md-8 {
   width: 100%;
   padding: 0 15px;
   float: left;
 }
-
 @media (min-width: 1024px) {
   .footer .col-md-8 {
     width: 66.6%;
   }
 }
-
 .footer .col-md-4 {
   padding: 0 15px;
   width: 100%;
   float: left;
 }
-
 @media (min-width: 1024px) {
   .footer .col-md-4 {
     width: 33.33%;
@@ -1102,66 +1080,50 @@ a.submit-a-request {
     width: 90%;
   }
 }
-
 .footer-inner .container {
   width: 100%;
 }
-
 .footer-language-selector button {
   color: lighten($text_color, 20%);
   display: inline-block;
 }
-
-.powered-by-zendesk a,
-.powered-by-zendesk a:visited {
-  color: lighten($text_color, 20%);
-}
-
 .footer .footer-top {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
 }
-
 .footer .footer-top .links-info {
   margin-bottom: 20px;
 }
-
 @media (min-width: 768px) {
   .footer .footer-top .links-info {
     margin-bottom: 0;
   }
 }
-
 .footer .footer-top .links-info h2 {
   font-size: 22px;
   line-height: 25px;
   margin: 0;
   font-weight: 700;
 }
-
 @media (min-width: 768px) {
   .footer .footer-top .links-info h2 {
     margin: 12px 0 0;
   }
 }
-
 .footer .footer-top .links-info a {
   color: #505050;
   text-decoration: underline;
 }
-
 .footer .footer-top .hbspt-form label {
   display: none;
 }
-
 .footer .footer-top .hbspt-form .hs-email {
   display: inline-block;
   vertical-align: top;
   width: calc(100% - 35px);
   margin: 0 10px 0 0;
 }
-
 .footer .footer-top .hbspt-form .hs-email .hs-input {
   border: 1px solid gray;
   padding: 5px 10px;
@@ -1171,14 +1133,12 @@ a.submit-a-request {
   font-weight: 400;
   font-size: 16px;
 }
-
 .footer .footer-top .hbspt-form .hs_submit {
   display: inline-block;
   vertical-align: top;
   margin: 11px 0 0;
   line-height: 0;
 }
-
 .footer .footer-top .hbspt-form .hs-button {
   color: white;
   background: url($assets-arrow-circle-right-svg) no-repeat;
@@ -1193,11 +1153,9 @@ a.submit-a-request {
   overflow: hidden;
   min-width: 18px;
 }
-
 .footer .footer-top .hbspt-form .hs_error_rollup {
   display: none;
 }
-
 .footer .footer-top .hbspt-form .submitted-message {
   margin-left: 0;
   color: #a31f34;
@@ -1209,73 +1167,62 @@ a.submit-a-request {
   width: auto;
   padding: 10px 0 5px;
 }
-
 .footer .footer-top .hbspt-form .no-list {
   margin: 0 0 -35px;
   padding: 5px 0 0;
   list-style: none;
 }
-
 .footer .footer-top .hbspt-form .no-list label {
   display: block;
   font-size: 12px;
   line-height: 15px;
   color: #a31f34;
 }
-
 .footer .footer-bottom {
   padding-top: 20px;
   padding-bottom: 20px;
   background: #f0f0f0;
   /* to carry the background to corners on both left and right sides
-     the big number to make it work on the bigger screens */
+   the big number to make it work on the bigger screens */
   padding-left: 999px;
   margin-left: -999px;
   padding-right: 999px;
   margin-right: -999px;
 }
-
 @media (min-width: 768px) {
   .footer .footer-bottom {
     padding-top: 40px;
   }
 }
-
 .footer .footer-bottom .links {
   margin: 0;
   padding-top: 0px;
   padding-bottom: 20px;
 }
-
 .footer .footer-bottom .links li {
   margin: 0 0 10px;
   font-size: 16px;
 }
-
 .footer .footer-bottom .links li a {
   color: #696969;
   font-weight: 400;
 }
-
 .footer .footer-bottom .address-area {
   margin: 0 0 15px;
   max-width: 100%;
 }
-
 @media (min-width: 768px) {
   .footer .footer-bottom .address-area {
     max-width: 270px;
     margin: 0 auto;
   }
 }
-
 .footer .footer-bottom .address-area h3 {
   color: #505050;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 8px;
 }
-
 .footer .footer-bottom address {
   font-size: 14px;
   line-height: 20px;
@@ -1285,11 +1232,9 @@ a.submit-a-request {
   font-weight: bold;
   font-style: normal;
 }
-
 .footer .social-networks {
   margin: 0;
 }
-
 .footer .social-networks li {
   display: inline-block;
   vertical-align: top;
@@ -1298,31 +1243,24 @@ a.submit-a-request {
   line-height: 30px;
   text-align: center;
 }
-
 .footer .social-networks li.facebook a:after {
   background: #42599e;
 }
-
 .footer .social-networks li.linkedin a:after {
   background: #117eb9;
 }
-
 .footer .social-networks li.twitter a:after {
   background: #55acee;
 }
-
 .footer .social-networks li.youtube a:after {
   background: #cd201f;
 }
-
 .footer .social-networks li.instagram a:after {
   background: radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e42e66 50%, #fa5332 70%, #ffdc80 100%);
 }
-
 .footer .social-networks li.soundcloud a:after {
   background: #ff5600;
 }
-
 .footer .social-networks li a {
   color: black;
   display: block;
@@ -1331,7 +1269,6 @@ a.submit-a-request {
   position: relative;
   transition: all 0.25s ease-in-out;
 }
-
 .footer .social-networks li a:after {
   position: absolute;
   left: 0;
@@ -1342,15 +1279,12 @@ a.submit-a-request {
   height: 0;
   transition: all 0.25s ease-in-out;
 }
-
 .footer .social-networks li a:hover {
   color: #000000;
 }
-
 .footer .social-networks li a:hover:after {
   height: 100%;
 }
-
 .footer .social-networks li a i {
   position: relative;
   z-index: 1;
@@ -1698,6 +1632,9 @@ a.submit-a-request {
   .section {
     margin-bottom: 60px;
   }
+}
+.section .recent-activity-item-parent, .section .recent-activity-item-link {
+  color: $text_color;
 }
 
 .home-section h2 {
@@ -3514,6 +3451,9 @@ a.submit-a-request {
   .collapsible-sidebar-body {
     display: block;
   }
+}
+.collapsible-sidebar-body .sidenav-item {
+  color: $text_color;
 }
 .collapsible-sidebar[aria-expanded=true] {
   max-height: none;

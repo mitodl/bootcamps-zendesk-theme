@@ -6,6 +6,10 @@
   }
 
   margin-bottom: 40px;
+
+  .recent-activity-item-parent, .recent-activity-item-link {
+    color: $text_color;
+  }
 }
 
 .home-section h2 {

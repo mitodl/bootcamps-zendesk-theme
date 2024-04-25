@@ -14,13 +14,15 @@
     <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
       <ul class="user-nav-list">
         <a class="how-to-apply horizontal-margin" href="{{settings.bc_how_to_apply}}">How to Apply</a>
-        {{#unless signed_in}}
-          <li>
-            {{#link "sign_in" class="sign-in"}}
-              {{t 'sign_in'}}
-            {{/link}}
-          </li>
-        {{/unless}}
+        {{#if settings.bc_show_user_info}}
+          {{#unless signed_in}}
+            <li>
+              {{#link "sign_in" class="sign-in"}}
+                {{t 'sign_in'}}
+              {{/link}}
+            </li>
+          {{/unless}}
+        {{/if}}
       </ul>
     </nav>
     {{#if signed_in}}
@@ -74,15 +76,16 @@
           <li class="item">{{change_password role="menuitem" class='change-password'}}</li>
           <li class="nav-divider"></li>
         {{else}}
-          <li class="item">
-            {{#link "sign_in" role="menuitem"}}
-              {{t 'sign_in'}}
-            {{/link}}
-          </li>
+          {{#if settings.bc_show_user_info}}
+            <li class="item">
+              {{#link "sign_in" role="menuitem"}}
+                {{t 'sign_in'}}
+              {{/link}}
+            </li>
+          {{/if}}
           <li class="nav-divider"></li>
         {{/if}}
-        <li class="item">{{link 'community' role="menuitem"}}</li>
-        <li class="item">{{link 'new_request' role="menuitem" class='submit-a-request'}}</li>
+        <a class="how-to-apply horizontal-margin" href="{{settings.bc_how_to_apply}}">How to Apply</a>
         <li class="nav-divider"></li>
         {{#if signed_in}}
           <li class="item">

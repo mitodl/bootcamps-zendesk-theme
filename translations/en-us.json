@@ -80,6 +80,8 @@
   "bc_home_description": "URL for Bootcamps",
   "bc_apply_now_label": "Apply Now",
   "bc_apply_now_description": "URL for Apply Now",
+  "bc_user_info_label": "User info",
+  "bc_user_info_description": "Show user info in header",
   "bc_how_apply_label": "How to Apply",
   "bc_how_apply_description": "URL for How To Apply",
   "bc_programs_label": "Bootcamp Programs",

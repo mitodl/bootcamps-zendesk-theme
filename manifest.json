@@ -48,7 +48,7 @@
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "rgba(175, 32, 28, 0.64)"
         },
         {
           "identifier": "background_color",
@@ -433,6 +433,13 @@
           "description": "bc_how_apply_description",
           "label": "bc_how_apply_label",
           "value": "https://bootcamps.mit.edu/apply/"
+        },
+        {
+          "identifier": "bc_show_user_info",
+          "type": "checkbox",
+          "description": "bc_user_info_description",
+          "label": "bc_user_info_label",
+          "value": false
         }
       ]
     },
