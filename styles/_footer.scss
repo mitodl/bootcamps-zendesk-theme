@@ -1,8 +1,57 @@
 /***** Footer *****/
 .footer {
-  border-top: 1px solid $low-contrast-border-color;
-  margin-top: 60px;
-  padding: 30px 0;
+  background: white;
+  overflow: hidden;
+
+  .row {
+    overflow: hidden;
+    margin: 0 -15px;
+  }
+
+  .col-sm-8 {
+    padding: 0 15px;
+    width: 100%;
+    float: left;
+    @include tablet {
+      width: 66.6%;
+    }
+  }
+
+  .col-sm-4 {
+    padding: 0 15px;
+    width: 100%;
+    float: left;
+
+    @include tablet {
+      width: 33.33%;
+    }
+  }
+
+  .col-6 {
+    padding: 0 15px;
+    width: 50%;
+    float: left;
+  }
+
+  .col-md-8 {
+    width: 100%;
+    padding: 0 15px;
+    float: left;
+
+    @include desktop {
+      width: 66.6%;
+    }
+  }
+
+  .col-md-4 {
+    padding: 0 15px;
+    width: 100%;
+    float: left;
+
+    @include desktop {
+      width: 33.33%;
+    }
+  }
 
   a {
     color: $secondary-text-color;
@@ -12,17 +61,281 @@
     @include max-width-container;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+
+    .container {
+      width: 100%;
+    }
   }
 
   &-language-selector button {
     color: $secondary-text-color;
     display: inline-block;
   }
-}
 
-.powered-by-zendesk {
-  a,
-  a:visited {
-    color: $secondary-text-color;
+  .footer-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    .links-info {
+      margin-bottom: 20px;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 22px;
+        line-height: 25px;
+        margin: 0;
+        font-weight: 700;
+        @include tablet {
+          margin: 12px 0 0;
+        }
+      }
+
+      a {
+        color: $matterhorn;
+        text-decoration: underline;
+      }
+    }
+
+    .hbspt-form {
+      label {
+        display: none;
+      }
+
+      .hs-email {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 35px);
+        margin: 0 10px 0 0;
+
+        .hs-input {
+          border: 1px solid gray;
+          padding: 5px 10px;
+          width: 100%;
+          border-radius: 5px;
+          line-height: 24px;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+
+      .hs_submit {
+        display: inline-block;
+        vertical-align: top;
+        margin: 11px 0 0;
+        line-height: 0;
+      }
+
+      .hs-button {
+        color: white;
+        background: url($assets-arrow-circle-right-svg) no-repeat;
+        background-size: 18px 18px;
+        border: none;
+        padding: 0;
+        opacity: 0.7;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        text-indent: -9999px;
+        overflow: hidden;
+        min-width: 18px;
+      }
+
+      .hs_error_rollup {
+        display: none;
+      }
+
+      .submitted-message {
+        margin-left: 0;
+        color: $mit-brand;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 14px;
+        text-align: center;
+        width: auto;
+        padding: 10px 0 5px;
+      }
+
+      .no-list {
+        margin: 0 0 -35px;
+        padding: 5px 0 0;
+        list-style: none;
+
+        label {
+          display: block;
+          font-size: 12px;
+          line-height: 15px;
+          color: $primary;
+        }
+      }
+    }
   }
+
+  .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $white-smoke-dark;
+    /* to carry the background to corners on both left and right sides
+     the big number to make it work on the bigger screens */
+    padding-left: 999px;
+    margin-left: -999px;
+    padding-right: 999px;
+    margin-right: -999px;
+
+    @include tablet {
+      padding-top: 40px;
+    }
+
+    .links {
+      margin: 0;
+      padding-top: 0px;
+      padding-bottom: 20px;
+
+      li {
+        margin: 0 0 10px;
+        font-size: 16px;
+
+        a {
+          color: $dim-gray;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .address-area {
+      margin: 0 0 15px;
+      max-width: 100%;
+
+      @include tablet {
+        max-width: 270px;
+        margin: 0 auto;
+      }
+
+      h3 {
+        color: $matterhorn;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+    }
+
+    address {
+      font-size: 14px;
+      line-height: 20px;
+      color: gray;
+      margin: 0 0 10px;
+      font-family: $heading_font;
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+
+  .social-networks {
+    margin: 0;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 10px 0 0;
+      font-size: 15px;
+      line-height: 30px;
+      text-align: center;
+
+      &.facebook {
+        a {
+          &:after {
+            background: $facebook;
+          }
+        }
+      }
+
+      &.linkedin {
+        a {
+          &:after {
+            background: $linkedin;
+          }
+        }
+      }
+
+      &.twitter {
+        a {
+          &:after {
+            background: $twitter;
+          }
+        }
+      }
+
+      &.youtube {
+        a {
+          &:after {
+            background: $youtube;
+          }
+        }
+      }
+
+      &.instagram {
+        a {
+          &:after {
+            background: radial-gradient(circle farthest-corner at 35% 100%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 10% 140%, #feda7e, transparent 50%),
+              radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+              radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+              radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e42e66 50%, #fa5332 70%, #ffdc80 100%);
+          }
+        }
+      }
+
+      &.soundcloud {
+        a {
+          &:after {
+            background: $soundcloud;
+          }
+        }
+      }
+
+      a {
+        color: black;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: all 0.25s ease-in-out;
+
+        &:after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          content: "";
+          background: black;
+          height: 0;
+          transition: all 0.25s ease-in-out;
+        }
+
+        &:hover {
+          color: $default-text-color;
+
+          &:after {
+            height: 100%;
+          }
+        }
+
+        i {
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+.powered-by-zendesk {
+  display: none;
+}
+.footer ~ a,
+.footer ~ svg {
+  display: none;
 }

@@ -1,5 +1,5 @@
 /***** Header *****/
-$header-height: 71px;
+$header-height: 52px;
 
 .header {
   @include max-width-container;
@@ -10,9 +10,72 @@ $header-height: 71px;
   justify-content: space-between;
 }
 
+.logo {
+  .row {
+    display: inline-block;
+  }
+
+  .mit-bootcamps-logo {
+    height: 29px;
+    width: 173px;
+    margin-right: 10px;
+  }
+
+  .btn-styled {
+    border-radius: 5px;
+    font-weight: 600;
+    border-width: 2px;
+    border-style: solid;
+    padding: 6px 12px;
+
+    &.size-1 {
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  a.btn-styled {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: $carmine;
+      border-color: $carmine;
+    }
+  }
+
+  .btn-red {
+    color: $white;
+    background-color: $button-red;
+    border-color: $button-red;
+
+    &.btn-inverse {
+      color: $button-red;
+      background-color: $white;
+
+      &:hover {
+        color: $white;
+        border-color: $button-red;
+        background-color: $button-red;
+      }
+    }
+  }
+}
+
 .logo img {
   max-height: 37px;
   vertical-align: middle;
+}
+
+.logo a {
+  color: $default-text-color;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .logo span {
@@ -20,23 +83,27 @@ $header-height: 71px;
   color: $brand_color;
 }
 
-.logo a {
-  display: inline-block;
-}
+//.logo a {
+//  display: inline-block;
+//}
 
-.logo a:hover, .logo a:focus, .logo a:active {
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
   text-decoration: none;
 }
 
 .user-nav {
-  @include tablet { position: relative; }
+  @include tablet {
+    position: relative;
+  }
   display: inline-block;
   position: absolute;
   white-space: nowrap;
 
   &[aria-expanded="true"] {
     background-color: #fff;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15), 0 4px 10px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), 0 4px 10px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #ddd;
     right: 0;
     left: 0;
@@ -59,6 +126,13 @@ $header-height: 71px;
       }
     }
   }
+}
+.how-to-apply {
+  color: $default-text-color !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  float: right;
 }
 
 .user-nav-list {
@@ -87,7 +161,9 @@ $header-height: 71px;
     padding: 0 20px 0 0;
     width: auto;
 
-    [dir="rtl"] & { padding: 0 0 0 20px;}
+    [dir="rtl"] & {
+      padding: 0 0 0 20px;
+    }
 
     &:hover,
     &:focus,
@@ -232,7 +308,6 @@ $header-height: 71px;
   top: auto;
   z-index: -999;
 
-
   [dir="rtl"] & {
     left: initial;
     right: -999px;
@@ -247,15 +322,18 @@ $header-height: 71px;
     top: auto;
     z-index: 999;
 
-
-  [dir="rtl"] & {
-    left: initial;
-    right: auto;
-  }
+    [dir="rtl"] & {
+      left: initial;
+      right: auto;
+    }
   }
 }
 
 // Disable the skip-navigation link when modals are open
 #zd-modal-container ~ .skip-navigation {
+  display: none;
+}
+
+a.submit-a-request{
   display: none;
 }

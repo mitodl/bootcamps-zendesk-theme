@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#17494D"
+          "value": "rgba(185, 20, 20, 0.87)"
         },
         {
           "identifier": "brand_text_color",
@@ -34,7 +34,7 @@
           "type": "color",
           "description": "link_color_description",
           "label": "link_color_label",
-          "value": "#1F73B7"
+          "value": "rgba(175, 32, 28, 0.64)"
         },
         {
           "identifier": "hover_link_color",
@@ -48,7 +48,7 @@
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "rgba(175, 32, 28, 0.64)"
         },
         {
           "identifier": "background_color",
@@ -133,7 +133,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "Helvetica, Arial, sans-serif"
         },
         {
           "identifier": "text_font",
@@ -206,7 +206,7 @@
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "Helvetica, Arial, sans-serif"
         }
       ]
     },
@@ -401,6 +401,106 @@
           "description": "request_list_beta_description",
           "label": "request_list_beta_label",
           "value": false
+        }
+      ]
+    },
+    {
+      "label": "bc_header_settings",
+      "variables": [
+        {
+          "identifier": "mit_ol_logo",
+          "type": "file",
+          "description": "mit_ol_logo_description",
+          "label": "mit_ol_logo_label"
+        },
+        {
+          "identifier": "bc_home",
+          "type": "text",
+          "description": "bc_home_description",
+          "label": "bc_home_label",
+          "value": "https://bootcamps.mit.edu/"
+        },
+        {
+          "identifier": "bc_apply_now",
+          "type": "text",
+          "description": "bc_apply_now_description",
+          "label": "bc_apply_now_label",
+          "value": "https://bootcamps.mit.edu/applications/"
+        },
+        {
+          "identifier": "bc_how_to_apply",
+          "type": "text",
+          "description": "bc_how_apply_description",
+          "label": "bc_how_apply_label",
+          "value": "https://bootcamps.mit.edu/apply/"
+        },
+        {
+          "identifier": "bc_show_user_info",
+          "type": "checkbox",
+          "description": "bc_user_info_description",
+          "label": "bc_user_info_label",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "bc_footer_settings",
+      "variables": [
+        {
+          "identifier": "bc_about_us",
+          "type": "text",
+          "description": "bc_about_us_description",
+          "label": "bc_about_us_label",
+          "value": "https://bootcamps.mit.edu/about-us/"
+        },
+        {
+          "identifier": "bc_programs",
+          "type": "text",
+          "description": "bc_programs_description",
+          "label": "bc_programs_label",
+          "value": "https://bootcamps.mit.edu/"
+        },
+        {
+          "identifier": "bc_tos",
+          "type": "text",
+          "description": "bc_tos_description",
+          "label": "bc_tos_label",
+          "value": "https://bootcamps.mit.edu/terms-of-service/"
+        },
+        {
+          "identifier": "bc_privacy_policy",
+          "type": "text",
+          "description": "bc_privacy_policy_description",
+          "label": "bc_privacy_policy_label",
+          "value": "https://bootcamps.mit.edu/privacy-policy/"
+        },
+        {
+          "identifier": "mit_open_learning",
+          "type": "text",
+          "description": "mit_open_learning_description",
+          "label": "mit_open_learning_label",
+          "value": "https://openlearning.mit.edu/"
+        },
+        {
+          "identifier": "mit_accessibility",
+          "type": "text",
+          "description": "mit_accessibility_description",
+          "label": "mit_accessibility_label",
+          "value": "https://accessibility.mit.edu"
+        },
+        {
+          "identifier": "hubspot_portal_id",
+          "type": "text",
+          "description": "mit_hb_portal_id_description",
+          "label": "mit_hb_portal_id_label",
+          "value": ""
+        },
+        {
+          "identifier": "hubspot_footer_form_guid",
+          "type": "text",
+          "description": "mit_hb_footer_form_id_description",
+          "label": "mit_hb_footer_form_id_label",
+          "value": ""
         }
       ]
     }
